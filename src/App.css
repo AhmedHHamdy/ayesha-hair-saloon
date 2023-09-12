@@ -1,0 +1,848 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+  background: black;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background: black;
+}
+
+footer {
+
+}
+
+/******************************************
+/* Navigation
+/*******************************************/
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav  > *{
+  float: left;
+  width: 15%;
+  padding: 2% 0;
+}
+
+nav ul {
+  width: 70%;
+  padding: 3rem 0;
+}
+
+nav ul li{
+  float: left;
+  width: 10%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+nav ul li:first-child {
+  margin-left: 2%;
+}
+
+nav ul li a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+.header-button {
+  text-align: end;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 5px 0 rgba(175, 174, 174, 0.1);
+  transition: all 0.1s linear;
+}
+
+.header-button:active {
+  box-shadow: 0 2px 0 rgba(154, 152, 152, 0.6);
+  transform: translateY(3px);
+}
+
+
+
+
+
+nav .logo-name {
+  font-size: 2.5rem;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  cursor: pointer;
+}
+
+
+
+/******************************************
+/* Main
+/*******************************************/
+main {
+  background: url("../src/assets/andrey-zvyagintsev-0MkchJkPTVA-unsplash.jpg") 0 0 no-repeat;
+  background-size: cover;
+  height: 94vh;
+  position: relative;
+}
+
+main h1 {
+  font-size: 7rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 25%;
+  text-transform: uppercase;
+  margin-left: 15%;
+  padding-top: 7rem;
+}
+
+main p {
+  font-size: 3rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 30%;
+  text-transform: uppercase;
+  margin-left: 15%;
+  padding-top: 2%;
+}
+
+
+main .main-button {
+  display: block;
+  font-size: 1.7rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 9%;
+  text-transform: uppercase;
+  margin-left: 15%;
+  margin-top: 2%;
+  background: black;
+  text-decoration: none;
+  padding: 0.8% 0.6% 0.8% 0.6%; 
+  text-align: center; 
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px rgba(154, 152, 152, 0.2);
+  transition: all .1s linear;
+}
+
+main .main-button:active {
+  box-shadow: 0 2px 0 rgba(61, 61, 61, 0.5);
+  transform: translateY(3px);
+}
+
+main .sale-container {
+  width: 19%;
+  background: white;
+  margin-left: 15%;
+  margin-top: 3%;
+  padding: 2% 0;
+  border-radius: 1px;
+}
+
+main .sale-container .span-first {
+  display: block;
+  font-size: 1.9rem;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 5% 0 5% 15%;
+  border-left: 3px solid black
+}
+
+main .sale-container p {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 0 3% 4% 3%;
+  color: black;
+}
+
+.sale-container .paragrap-span {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.sale-container .sale-container-button {
+  display: block;
+  font-size: 1.6rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 60%;
+  text-transform: uppercase;
+  margin-left: 15%;
+  margin-top: 2%;
+  background: black;
+  text-decoration: none;
+  padding: 3% 2% 3% 2%; 
+  text-align: center; 
+  border-radius: 1px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 rgba(175, 174, 174, 0.4);
+  transition: all 0.1s linear;
+}
+
+.sale-container .sale-container-button:active {
+  box-shadow: 0 2px 0 rgba(154, 152, 152, 0.6);
+  transform: translateY(3px);
+}
+
+main .arrow-container {
+  position: absolute;
+  left: 1357px;
+  top: 631px;
+  width: 20%;
+  padding-left: 12%;
+}
+
+main .arrow-container a {
+  font-size: 1.6rem;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 60%;
+  text-transform: uppercase;
+  margin-left: 2%;
+  margin-top: 2%;
+  background: white;
+  padding: 6% 8% 6% 8%; 
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px rgba(154, 152, 152, 0.1);
+  transition: all .1s linear;
+}
+
+main .arrow-container a:active {
+  box-shadow: 0 2px 0 rgba(61, 61, 61, 0.5);
+  transform: translateY(1px);
+}
+
+
+
+/******************************************
+/* Secondary Section
+/*******************************************/
+
+.secondary-section {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 12% 6% 4% 6%;
+  margin-bottom: 8%;
+}
+
+.secondary-section section {
+  float: left;
+  width: 33.33%;
+}
+
+.secondary-section section h3 {
+  font-size: 2rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+  margin-top: 3%;
+}
+
+
+.secondary-section .fa-spray-can-sparkles {
+  font-size: 4rem;
+}
+
+.secondary-section p {
+  color: white;
+  font-size: 1.6rem;
+  width: 60%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 3% auto;
+}
+
+.secondary-section .fa-couch {
+  font-size: 4rem;
+}
+
+.secondary-section .fa-bottle-droplet {
+  font-size: 4rem;
+}
+
+
+
+
+/******************************************
+/* Third Section
+/*******************************************/
+
+.third-section {
+  padding: 5% 10%;
+  background: linear-gradient(to right,#0E0F1A 60%, #0E121E);
+  padding: 23rem;
+}
+
+.third-section img {
+  float: right;
+  width: 50%;
+}
+
+.third-section section {
+  float: left;
+  width: 50%;
+}
+
+.third-section h2 {
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 15%;
+  width: 50%;
+}
+
+.third-section p {
+  font-size: 2rem;
+  color: rgb(156, 155, 155);
+  text-transform: uppercase;
+  margin-top: 3%;
+  width: 79%;
+  margin-bottom: 8%;
+}
+
+.third-section a {
+  font-size: 1.9rem;
+  color: white;
+  width: 60%;
+  text-transform: uppercase;
+  background: black;
+  padding: 2% 4% 2% 4%; 
+  border-radius: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 5px 0 rgba(175, 174, 174, 0.4);
+  transition: all 0.1s linear;
+}
+
+.third-section a:active {
+  box-shadow: 0 2px 0 rgba(154, 152, 152, 0.6);
+  transform: translateY(3px);
+}
+
+
+
+
+
+
+
+
+
+/******************************************
+/* Fourth Section
+/*******************************************/
+.fourth-section {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  background: black;
+}
+
+.fourth-section .img-container section {
+  float: left;
+  width: 30%;
+  height: 400px;
+
+}
+
+.fourth-section .one-pic {
+  background: url("../src/assets/gift-habeshaw-yJPwo5GgvSo-unsplash.jpg") 0 0 no-repeat;
+  background-size: contain;
+  margin-left: 10%;
+}
+
+.two-pic {
+  background: url("../src/assets/andrey-zvyagintsev-_fvUcz1H6EY-unsplash.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+
+.three-pic {
+  background: url("../src/assets/d.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.fourth-section .artist-info {
+  float: none;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fourth-section .artist-info {
+  text-transform: uppercase;
+}
+
+.fourth-section .artist-info div{
+  float: left;
+  width: 25%;
+  margin: 0 0 0 3.9%;
+  background: white;
+  color: black;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.6rem;
+}
+
+.fourth-section div.second-div {
+  margin-left: 8.3%;
+}
+
+.fourth-section div.third-div {
+  margin-left: 8.4%;
+
+}
+
+
+
+/******************************************
+/* Fifth Section
+/*******************************************/
+.fifth-section {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  background: url("../src/assets/gift-habeshaw-s9jjABueXJc-unsplash.jpg") 0 0 no-repeat;
+  background-size: cover;
+  height: 600px;
+  padding-top: 7%;
+}
+
+.fifth-section > span {
+  font-size: 2.6rem;
+  color: white;
+  padding-left: 13%;
+  text-transform: uppercase;
+}
+
+.fifth-section h3 {
+  font-size: 2.6rem;
+  color: white;
+  padding-left: 13%;
+  margin-top: 1%;
+  width: 30%;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 6%;
+}
+
+
+
+.fifth-section .heading-span {
+  font-weight: bolder;
+  font-size: 4rem;
+  font-style: oblique;
+}
+
+.fifth-section a {
+  font-size: 1.9rem;
+  color: white;
+  width: 60%;
+  text-transform: uppercase;
+  background: black;
+  padding: 2% 2% 2% 2%; 
+  border-radius: 1px;
+  text-decoration: none;
+  margin-left: 13%;
+  box-shadow: 0 5px 0 rgba(175, 174, 174, 0.4);
+  transition: all 0.1s linear;
+}
+
+.fifth-section a:active {
+  box-shadow: 0 2px 0 rgba(154, 152, 152, 0.6);
+  transform: translateY(3px);
+}
+
+
+
+
+
+/******************************************
+/* Sixth Section
+/*******************************************/
+.sixth-section {
+  margin-bottom: 4%;
+  background: black;
+}
+
+.sixth-section h5 {
+  font-size: 2.6rem;
+  color: white;
+  margin-top: 1%;
+  width: 100%;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 6%;
+  text-align: center;
+}
+
+.sixth-section-img-container {
+  height: 920px;
+  position: relative;
+}
+
+.sixth-section .sixth-section-img-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.sixth-section-img-container section{
+  float: left;
+  margin-left: 1%;
+
+}
+
+.one {
+  background: url("../src/assets/jennifer-marquez-m8t46PKlobE-unsplash.jpg") 0 0 no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 300px;
+}
+
+.two {
+  background: url("../src/assets/calvin-lupiya-Mx4auh5zO4w-unsplash.jpg") 50% 5% no-repeat;
+  background-size: cover;
+  width: 33.33%;
+  height: 600px;
+}
+
+.sixth-section-img-container .three {
+  background: url("../src/assets/clarke-sanders-HOQpBGL95Z8-unsplash.jpg") 50% 5% no-repeat;
+  background-size: cover;
+  width: 33.33%;
+  height: 300px;
+}
+
+.four {
+  background: url("../src/assets/judeus-samson-0UECcInuCR4-unsplash.jpg") 50% 5% no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 310px;
+}
+
+.five {
+  background: url("../src/assets/jeffery-erhunse-vp9mRauo68c-unsplash.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  width: 33.33%;
+  height: 300px;
+  position: absolute;
+  left: 316px;
+  top: 610px;
+}
+
+.six {
+  background: url("../src/assets/miguel-bruna-ex1CRGFAftA-unsplash.jpg") 50% 5% no-repeat;
+  background-size: cover;
+  width: 33.33%;
+  height: 600px;
+  margin-top: 1%;
+}
+
+.sixth-section-img-container section:hover {
+  box-shadow: inset 1px 600px 5px 0px rgba(25, 25, 25, 0.9);
+}
+
+
+/******************************************
+/* Media Query
+/*******************************************/
+@media screen and (max-width:800px) {
+  nav ul.menu, nav a.header-button {
+    display:  none;
+  }
+
+  nav {
+    float: none;
+    text-align: center;
+  }
+
+  nav .logo-name {
+    display: block;
+    margin: 0 25%;
+    width: 50%;
+    padding: 5% 0;
+  }
+
+  main {
+    padding: 5%;
+  }
+
+  main h1 {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  main p {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 8%;
+  }
+
+  main a.main-button {
+    width: 100%;
+    padding: 5%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  main .sale-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 12%;
+  }
+
+  main .sale-container .span-first {
+    padding-left: 29%;
+  }
+
+  main .sale-container .sale-container-button {
+    margin-left: 21%;
+  }
+
+  .secondary-section section {
+    float: none;
+    width: 100%;
+    padding-top: 6%;
+  }
+
+  .third-section img {
+    float: none;
+    width: 100%;
+  }
+
+  .third-section section h2 {
+    width: 262%;
+  }
+
+  .third-section section p {
+    width: 220%;
+  }
+
+  .third-section a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 49%;
+  }
+
+  .fourth-section .img-container section {
+    float: none;
+    width: 100%;
+    margin: 3% 13%;
+
+  }
+
+  .fourth-section .artist-info {
+    display: none;
+    width: 100%;
+  }
+
+  .fifth-section {
+    background-position: 30% 2%;
+  }
+
+  .sixth-section-img-container {
+    /* height: 1500px; */
+  }
+
+  .sixth-section-img-container section {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 500px;
+    margin-bottom: 10%;
+  }
+
+
+  .sixth-section-img-container .one {
+    margin-bottom: 192%;
+  }
+  
+  .sixth-section-img-container .two {
+    margin-top: 49%;
+    margin-bottom: -122%;
+    padding-bottom: 12%;
+    
+  }
+  
+  .sixth-section-img-container .three {
+    margin-bottom: 16px;
+    margin-top: 125%;
+    width: 100%;
+  }
+  
+  .sixth-section-img-container .four {
+    margin-top: 75%;
+    margin-bottom: 10%;
+  }
+  
+  .sixth-section-img-container .five {
+    display: none;
+  }
+  
+  .sixth-section-img-container .six {
+    margin-bottom: 0%;
+  }
+
+  main .arrow-container {
+    display: none;
+  }
+
+}
+
+
+.contactForm {
+  width: 50%;
+  margin: 11rem auto 0 auto;
+}
+
+.contactForm h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.contactForm form input {
+  padding: 3%;
+  background-color: #ffffff;
+  border: none;
+  margin-bottom: 2%;
+  border-radius: 0.4rem;
+  color: #3b3a37;
+  font-weight: bold;
+  outline-color: #ffffff;;
+  font-size: 2rem;
+}
+
+.contactForm form button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 2rem;
+  border: 0;
+  padding: 2%;
+  border-radius: 0.4rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contactForm form button:hover {
+  background: #ffffff;
+  color: #000000;
+  scale: 1.01;
+}
+
+.contactForm form button i {
+  font-size: 1.8rem;
+}
+
+.contactForm form textarea {
+  padding: 3%;
+  background-color: #ffffff;;
+  border: none;
+  color: #3b3a37;
+  margin-bottom: 2%;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  font-size: 2rem;
+} 
